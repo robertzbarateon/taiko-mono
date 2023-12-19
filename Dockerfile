@@ -25,3 +25,4 @@ RUN apk add --no-cache ca-certificates
 COPY --from=builder /taiko-mono/packages/$PACKAGE/bin/$PACKAGE /usr/local/bin/
 
 ENTRYPOINT ["$PACKAGE"]
+!
